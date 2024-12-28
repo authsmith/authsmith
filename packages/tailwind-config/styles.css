@@ -1,0 +1,22 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --authsmith-accent: #0751CF;
+    --authsmith-accent-gradient: linear-gradient(0deg, rgba(0, 0, 0, 0) -25.82%, rgba(255, 255, 255, 0.2) 114.57%), var(--authsmith-accent);
+    
+    --authsmith-dark: #000000;
+    --authsmith-light: #ffffff;
+
+    --authsmith-muted-foreground: #515151;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-default text-default;
+  }
+}
