@@ -4,15 +4,11 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "start": "wrangler dev",
-    "dev": "remix vite:dev",
-    "deploy": "wrangler deploy",
     "build": "remix vite:build",
-    "cleanup": "rimraf .cache ./build",
+    "dev": "remix vite:dev",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
-    "format": "prettier --write .",
-    "typecheck": "wrangler types && tsc",
-    "typegen": "wrangler types"
+    "start": "remix-serve ./build/server/index.js",
+    "typecheck": "tsc"
   },
   "dependencies": {
     "@authsmith/ui": "workspace:*",
