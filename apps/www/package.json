@@ -4,15 +4,21 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "build": "remix vite:build",
+    "start": "wrangler dev",
     "dev": "remix vite:dev",
+    "deploy": "wrangler deploy",
+    "build": "remix vite:build",
+    "cleanup": "rimraf .cache ./build",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
-    "start": "remix-serve ./build/server/index.js",
-    "typecheck": "tsc"
+    "format": "prettier --write .",
+    "typecheck": "wrangler types && tsc",
+    "typegen": "wrangler types"
   },
   "dependencies": {
     "@authsmith/ui": "workspace:*",
     "@hookform/resolvers": "latest",
+    "@remix-run/cloudflare": "^2.12.1",
+    "@remix-run/cloudflare-pages": "^2.12.1",
     "@remix-run/node": "^2.15.2",
     "@remix-run/react": "^2.15.2",
     "@remix-run/serve": "^2.15.2",
@@ -27,6 +33,7 @@
     "@authsmith/eslint-config": "workspace:*",
     "@authsmith/tailwind-config": "workspace:*",
     "@authsmith/typescript-config": "workspace:*",
+    "@cloudflare/workers-types": "^4.20240925.0",
     "@remix-run/dev": "^2.15.2",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
@@ -43,7 +50,8 @@
     "tailwindcss": "^3.4.4",
     "typescript": "^5.1.6",
     "vite": "^5.1.0",
-    "vite-tsconfig-paths": "^4.2.1"
+    "vite-tsconfig-paths": "^4.2.1",
+    "wrangler": "^3.78.12"
   },
   "engines": {
     "node": ">=20.0.0"
