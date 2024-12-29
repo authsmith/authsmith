@@ -6,6 +6,7 @@
     "build:www": "turbo run build --filter=@authsmith/www",
     "dev": "turbo dev",
     "dev:www": "turbo run dev --filter=@authsmith/www",
+    "deploy:www": "turbo run deploy --filter=@authsmith/www",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "start:www": "turbo run dev --filter=@authsmith/www"

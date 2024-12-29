@@ -5,10 +5,14 @@
   "type": "module",
   "scripts": {
     "build": "remix vite:build",
+    "deploy": "pnpm run build && wrangler pages deploy",
     "dev": "remix vite:dev",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
-    "start": "remix-serve ./build/server/index.js",
-    "typecheck": "tsc"
+    "start": "wrangler pages dev ./build/client",
+    "typecheck": "tsc",
+    "typegen": "wrangler types",
+    "preview": "pnpm run build && wrangler pages dev",
+    "cf-typegen": "wrangler types"
   },
   "dependencies": {
     "@authsmith/ui": "workspace:*",
@@ -29,7 +33,7 @@
     "@authsmith/eslint-config": "workspace:*",
     "@authsmith/tailwind-config": "workspace:*",
     "@authsmith/typescript-config": "workspace:*",
-    "@cloudflare/workers-types": "^4.20240925.0",
+    "@cloudflare/workers-types": "^4.20241224.0",
     "@remix-run/dev": "^2.15.2",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
@@ -47,7 +51,7 @@
     "typescript": "^5.1.6",
     "vite": "^5.1.0",
     "vite-tsconfig-paths": "^4.2.1",
-    "wrangler": "^3.78.12"
+    "wrangler": "3.57.1"
   },
   "engines": {
     "node": ">=20.0.0"

@@ -6,7 +6,7 @@ import {
   ScrollRestoration,
   useLoaderData,
 } from "@remix-run/react";
-import type { LinksFunction } from "@remix-run/node";
+import type { LinksFunction } from "@remix-run/cloudflare";
 
 import "./tailwind.css";
 import Header from "./components/Header";
@@ -29,7 +29,7 @@ export const links: LinksFunction = () => [
   {
     rel: "icon",
     type: "image/png",
-    href: "../public/favicon.png",
+    href: "/favicon.png",
   },
 ];
 
