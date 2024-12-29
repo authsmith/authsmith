@@ -22,7 +22,7 @@ module.exports = {
   ignorePatterns: ["!**/.server", "!**/.client"],
 
   // Base config
-  extends: ["eslint:recommended","@authsmith/eslint-config/next.js"],
+  extends: ["eslint:recommended"],
 
   overrides: [
     // React

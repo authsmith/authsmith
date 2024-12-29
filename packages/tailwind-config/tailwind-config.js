@@ -12,26 +12,35 @@ const config = {
         "2xl": "1400px",
       },
       colors: {
-       accent: "var(--authsmith-accent)",
-        dark: "var(--authsmith-dark)",
-        light: "var(--authsmith-light)",
-        muted: "var(--auth-smith-muted-foreground)"
+       accent: "rgb(var(--authsmith-accent))",
+       "accent-gradient": "rgb(var(--authsmith-accent-gradient))",
+        alert: "rgb(var(--authsmith-alert))",
+        error: "rgb(var(--authsmith-error))",
+        dark: "rgb(var(--authsmith-dark))",
+        light: "rgb(var(--authsmith-light))",
+        muted: "rgb(var(--auth-smith-muted-foreground))"
       },
       textColor: {
-        accent: "var(--authsmith-accent)",
-        dark: "var(--authsmith-dark)",
-        light: "var(--authsmith-light)",
-        muted: "var(--auth-smith-muted-foreground)"
+        accent: "rgb(var(--authsmith-accent))",
+        "accent-gradient": "rgb(var(--authsmith-accent-gradient))",
+        alert: "rgb(var(--authsmith-alert))",
+        error: "rgb(var(--authsmith-error))",
+        dark: "rgb(var(--authsmith-dark))",
+        light: "rgb(var(--authsmith-light))",
+        muted: "rgb(var(--auth-smith-muted-foreground))"
       },
       borderColor: {
-        accent: "var(--authsmith-accent)",
-        dark: "var(--authsmith-dark)",
-        light: "var(--authsmith-light)",
-        muted: "var(--auth-smith-muted-foreground)"
+        accent: "rgb(var(--authsmith-accent))",
+        "accent-gradient": "rgb(var(--authsmith-accent-gradient))",
+        alert: "rgb(var(--authsmith-alert))",
+        error: "rgb(var(--authsmith-error))",
+        dark: "rgb(var(--authsmith-dark))",
+        light: "rgb(var(--authsmith-light))",
+        muted: "rgb(var(--auth-smith-muted-foreground))"
       },
       fontFamily: {
-        updot: ["var(--font-updot)", "ui-serif"],
-        mono: ["Roboto Mono", "monospace"],
+        body: ['Inter', 'sans-serif'],
+        mono: ["Martian Mono", "monospace"],
       },
       backgroundImage: {
       },

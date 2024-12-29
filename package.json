@@ -3,10 +3,12 @@
   "private": true,
   "scripts": {
     "build": "turbo build",
+    "build:www": "turbo run build --filter=@authsmith/www",
     "dev": "turbo dev",
     "dev:www": "turbo run dev --filter=@authsmith/www",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "start:www": "turbo run dev --filter=@authsmith/www"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",

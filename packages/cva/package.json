@@ -1,0 +1,21 @@
+{
+    "name": "@authsmith/cva",
+    "version": "0.0.0",
+    "private": true,
+    "description": "Utility for easy Tailwind CSS variants.",
+    "license": "MIT",
+    "main": "./cva.config.ts",
+    "types": "./cva.config.ts",
+    "scripts": {
+        "clean": "git clean -xdf .turbo node_modules"
+    },
+    "dependencies": {
+        "cva": "^1.0.0-beta.1",
+        "tailwind-merge": "^2.1.0"
+    },
+    "devDependencies": {
+        "@authsmith/typescript-config": "workspace:*",
+        "@types/node": "^18.18.1",
+        "typescript": "^5.3.3"
+    }
+}

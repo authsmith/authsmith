@@ -1,22 +1,23 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --authsmith-accent: #0751CF;
-    --authsmith-accent-gradient: linear-gradient(0deg, rgba(0, 0, 0, 0) -25.82%, rgba(255, 255, 255, 0.2) 114.57%), var(--authsmith-accent);
-    
-    --authsmith-dark: #000000;
-    --authsmith-light: #ffffff;
+    --authsmith-accent: 7 81 207;
 
-    --authsmith-muted-foreground: #515151;
+    --authsmith-dark: 6 15 17;
+    --authsmith-light: 255 255 255;
+
+    --authsmith-alert: 251 220 19;
+    --authsmith-error: 228 8 12;
+
+    --authsmith-muted-foreground: 81 81 81;
   }
 }
 
 @layer base {
   body {
-    @apply bg-default text-default;
+    /* @apply bg-default text-default; */
   }
 }
